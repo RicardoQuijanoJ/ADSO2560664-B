@@ -11,10 +11,10 @@ class Aprendiz: #   Se crea una clase Aprendiz
         self.__cursos=[]    #   Se crea una lista llamada curso inicialmente vacia
 
     def agregarCurso(self,nombreCursito): # Se crea un metodo (agregarCurso) y recibe un parametro (nombreCursito)
-        cursito=Curso(nombreCursito)    #   Se crea una variable para instanciar la clase Curso que recibe el parametro del metodo (agregarCurso)
-        self.__cursos.append(cursito)   #
+        cursito=Curso(nombreCursito)    #   Se crea un objeto que instancia la clase Curso que recibe el parametro del metodo (agregarCurso)
+        self.__cursos.append(cursito)   #   Se agrega en la lista (cursos) el dato de la variable (cursito)
 
-    def getCursos(self):
+    def getCursos(self):    #   Se crea un metodo llamado getCursos
         return self.__cursos
     
 ap=Aprendiz('Sofia')
