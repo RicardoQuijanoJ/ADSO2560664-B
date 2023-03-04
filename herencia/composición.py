@@ -11,15 +11,15 @@ class Aprendiz: #   Se crea una clase Aprendiz
         self.__cursos=[]    #   Se crea una lista llamada curso inicialmente vacia
 
     def agregarCurso(self,nombreCursito): # Se crea un metodo (agregarCurso) y recibe un parametro (nombreCursito)
-        cursito=Curso(nombreCursito)    #   Se crea un objeto que instancia la clase Curso que recibe el parametro del metodo (agregarCurso)
-        self.__cursos.append(cursito)   #   Se agrega en la lista (cursos) el dato de la variable (cursito)
+        cursito=Curso(nombreCursito)    #   Se crea un objeto (cursito) que instancia la clase Curso que recibe el parametro del metodo (agregarCurso)
+        self.__cursos.append(cursito)   #   Se agrega en la lista (cursos) de esta clase (Aprendiz)  el dato (cursito)
 
     def getCursos(self):    #   Se crea un metodo llamado getCursos
-        return self.__cursos
+        return self.__cursos    #   retorna la lista (cursos) de esta clase (Aprendiz)
     
-ap=Aprendiz('Sofia')
-ap.agregarCurso('Python Basico')
-ap.agregarCurso('Python Intermedio')
+ap=Aprendiz('Sofia')    #   se crea un objeto (ap) que instancia la clase Aprendiz y envia como paramentro un dato(Sofia)
+ap.agregarCurso('Python Basico')    #   se obtiene el metodo (agregarCurso) que es de la clase Aprendiz ya que en la línea 20 fue instanciado y se le pasa el dato
+ap.agregarCurso('Python Intermedio')    #   se obtiene el metodo (agregarCurso) que es de la clase Aprendiz ya que en la línea 20 fue instanciado y se le pasa el dato  
 
-for c in ap.getCursos():
-    print(c.getTitulo())
+for c in ap.getCursos():    #   se crea un ciclo en donde la variable (c) va a tomar el dato de las posiciones de la lista invocada en el metodo (ap.getCursos)
+    print(c.getTitulo())    #   Se imprime la variable (c) 
