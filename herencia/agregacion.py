@@ -29,4 +29,3 @@ print(a.getCursos())    #   se imprime el espacio de memoria de los datos de la 
 
 for curso in a.getCursos(): #   se crea un ciclo en donde la variable (curso) va a tomar el dato de las posiciones de la lista invocada en el metodo (ap.getCursos)
     print(curso.getTitulo())    #   Se imprime la variable (curso)
-r
