@@ -18,8 +18,8 @@ class Aprendiz: #   Se crea una clase Aprendiz
         return self.__cursos    #   retorna la lista (cursos) de esta clase (Aprendiz)
     
 ap=Aprendiz('Sofia')    #   se crea un objeto (ap) que instancia la clase Aprendiz y envia como paramentro un dato(Sofia)
-ap.agregarCurso('Python Basico')    #   se obtiene el metodo (agregarCurso) que es de la clase Aprendiz ya que en la línea 20 fue instanciado y se le pasa el dato
-ap.agregarCurso('Python Intermedio')    #   se obtiene el metodo (agregarCurso) que es de la clase Aprendiz ya que en la línea 20 fue instanciado y se le pasa el dato  
+ap.agregarCurso('Python Basico')    #   desde el objeto (ap) se invoca el metodo (agregarCurso) de la clase que anteriormente fue instanciado y se le envia como parametro el dato
+ap.agregarCurso('Python Intermedio')    #   desde el objeto (ap) se invoca el metodo (agregarCurso) de la clase que anteriormente fue instanciado y se le envia como parametro el dato
 
 for c in ap.getCursos():    #   se crea un ciclo en donde la variable (c) va a tomar el dato de las posiciones de la lista invocada en el metodo (ap.getCursos)
     print(c.getTitulo())    #   Se imprime la variable (c) 
