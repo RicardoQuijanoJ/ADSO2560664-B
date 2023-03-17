@@ -1,0 +1,28 @@
+create table Venta(
+idVenta INTEGER PRIMARY KEY not null,
+idPersona INTEGER NOT NULL,
+idUsuario INTEGER NOT NULL,
+venTipoComprobante VARCHAR (20),
+venSerieComprobante VARCHAR (10),
+venNumComprobante INTEGER,
+venFecha DATETIME
+);
+Alter table Venta
+add Column venImpuesto DECIMAL (4,2),
+add Column venTotal DECIMAL (11,2),
+add Column venEstado VARCHAR (20),
+add Constraint UNIQUE (venNumComprobante)
+add Constraint fkVenta FOREIGN KEY (idPersona) REFERENCES Persona (idPersona)
+add Constraint fkVenta FOREIGN KEY (idUsuario) REFERENCES Usuario (idUsuario)
+
+
+
+
+--(idVenta, idPersona, idUsuario, venTipoComprobante, venSerieComprobante, venNumComprobante, venFecha, venImpuesto, venTotal, venEstado)
+INSERT INTO Venta VALUES (1000, 1090523397, 1, "Ingreso", "ING-001", 12, 2023/03/15, 3.4, 12345678,45, "Pagado");
+INSERT INTO Venta VALUES (1001, 1090523397, 1, "Egreso", "EGRE-001", 02, 2023/03/16, 4.4, 110000, "en proceso");
+INSERT INTO Venta VALUES (1002, 1090542341, 2, "Ingreso", "ING-002", 13, 2023/03/11, 3.4, 200000, "Pagado");
+INSERT INTO Venta VALUES (1003, 23445566, 3, "Cheque", "CHE-001", 70, 2023/03/12, 5, 300000, "En proceso");
+INSERT INTO Venta VALUES (1004, 88271954, 4, "Ingreso", "ING-003", 14, 2023/03/11, 2, 111000, "Por pagar");
+
+
