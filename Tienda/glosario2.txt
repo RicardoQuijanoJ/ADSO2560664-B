@@ -1,0 +1,10 @@
+historia de usuario
+- cliente... entender el sistema en mi idioma
+acceder a servicios locales y globales---
+
+- usuario .... acceder a los servicios en cualquier momento.
+
+
+Requierimientos internacionalización:   traducciones de contenido. REgistro de prestadores globales y capacidad de busqueda local o global.
+
+Servidor global.. 
